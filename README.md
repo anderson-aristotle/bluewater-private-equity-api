@@ -16,16 +16,16 @@ Bluewater, Private Equity
 
 ## User Stories
 
-As an unregistered user, I'd like to see the portfolio allocation distribution.
-As an unregistered user, I'd like to sign-up with email and password.
-As a registered user, I'd like to sign-in with email and password.
-As a signed-in user, I'd like to change password.
-As a signed-in user, I'd like to sign out.
+*   As an unregistered user, I'd like to see the portfolio allocation distribution.
+*   As an unregistered user, I'd like to sign-up with email and password.
+*   As a registered user, I'd like to sign-in with email and password.
+*   As a signed-in user, I'd like to change password.
+*   As a signed-in user, I'd like to sign out.
 
-As a signed in user, I'd like to contribute to an investment portfolio.
-As a signed in user, I'd like to update my account's cash contribution.
-As a signed in user, I'd like to delete my account.
-As a signed in user, I'd like to see my equity contribution.
+*   As a signed in user, I'd like to contribute to an investment portfolio.
+*   As a signed in user, I'd like to update my account's cash contribution.
+*   As a signed in user, I'd like to delete my account.
+*   As a signed in user, I'd like to see my equity contribution.
 
 ## Wireframe
 - [Bluewater, Private Equity](https://imgur.com/tZYgZQT)
@@ -35,7 +35,7 @@ As a signed in user, I'd like to see my equity contribution.
 
 ## Technology
 
-_   Ajax
+-   Ajax
 -   Bootstrap
 -   CSS3
 -   HTML5
@@ -60,7 +60,7 @@ _   Ajax
 Integrate with a 3rd location-based API:
 
 
-    ## [License](LICENSE)
+## [License](LICENSE)
 
 1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
 2.  All software code is licensed under GNU GPLv3. [ ] For commercial use or
