@@ -1,14 +1,13 @@
 # frozen_string_literal: true
 
-#
 module Authentication
   extend ActiveSupport::Concern
 
-  #
   module ClassMethods
     def authenticate(email, password)
       user = find_by(email: email)
       return unless user
+
       user.send :new_token
       user.authenticate password
     end
