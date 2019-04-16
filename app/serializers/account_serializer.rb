@@ -1,3 +1,3 @@
 class AccountSerializer < ActiveModel::Serializer
-  attributes :id, :asset_class, :amount
+  attributes :id, :name, :amount
 end
