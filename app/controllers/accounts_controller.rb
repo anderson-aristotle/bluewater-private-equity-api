@@ -1,4 +1,4 @@
-class AccountsController < ApplicationController
+class AccountsController < OpenReadController
   before_action :set_account, only: [:show, :update, :destroy]
 
   # GET /accounts
