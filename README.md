@@ -9,10 +9,24 @@ This is a prototype of a financial services product. Users will be about to allo
 ## Directory
 
 Bluewater, Private Equity
-1.  [Backend]()
-2.  [Front End]()
+1.  [Backend](https://github.com/anderson-aristotle/bluewater-private-equity-api)
+2.  [Front End](https://github.com/anderson-aristotle/bluewater-private-equity-client)
 3.  [Deployed]()
-4.  [Ruby on Rails]()
+4.  [Ruby on Rails](https://bluewater-private-equity-00001.herokuapp.com/)
+
+## API End Points
+
+| Verb   | URI Pattern            | Controller#Action |
+|--------|------------------------|-------------------|
+| POST   | `/sign-up`             | `users#signup`    |
+| POST   | `/sign-in`             | `users#signin`    |
+| DELETE | `/sign-out`            | `users#signout`   |
+| PATCH  | `/change-password`     | `users#changepw`  |
+| GET    | `/accounts`            | `accounts#index`  |
+| POST   | `/accounts`            | `accounts#create` |
+| GET    | `/accounts/:id`        | `accounts#show`   |
+| PATCH  | `/accounts/:id`        | `accounts#update` |
+
 
 ## User Stories
 
@@ -59,6 +73,16 @@ Bluewater, Private Equity
 
 Integrate with a 3rd location-based API:
 
+  - UI upgrades
+  - ACH set-up
+  - Charts
+
+## Disclaimer
+This API may be reset or altered at anytime.  The future of this API may not
+align with the current state and therefore the state your client application
+expects.  If you would like to maintain a version of this API in its current
+state for your future use, please fork and clone the repository and launch it
+on heroku.
 
 ## [License](LICENSE)
 
