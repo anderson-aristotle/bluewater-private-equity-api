@@ -11,7 +11,7 @@ This is a prototype of a financial services product. Users will be about to allo
 Bluewater, Private Equity
 1.  [Backend](https://github.com/anderson-aristotle/bluewater-private-equity-api)
 2.  [Front End](https://github.com/anderson-aristotle/bluewater-private-equity-client)
-3.  [Deployed]()
+3.  [Deployed](https://anderson-aristotle.github.io/bluewater-private-equity-client/)
 4.  [Ruby on Rails](https://bluewater-private-equity-00001.herokuapp.com/)
 
 ## API End Points
