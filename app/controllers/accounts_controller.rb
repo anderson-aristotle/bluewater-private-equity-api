@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class AccountsController < OpenReadController
-  before_action :set_account, only: [:show, :update, :destroy]
+  before_action :set_account, only: %i[update destroy]
 
   # GET /accounts
   def index
@@ -10,12 +12,13 @@ class AccountsController < OpenReadController
 
   # GET /accounts/1
   def show
+    @account = Account.find_by id: params[:id]
     render json: @account
   end
 
   # POST /accounts
   def create
-    @account = Account.new(account_params)
+    @account = current_user.accounts.new(account_params)
 
     if @account.save
       render json: @account, status: :created, location: @account
@@ -39,13 +42,14 @@ class AccountsController < OpenReadController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_account
-      @account = Account.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def account_params
-      params.require(:account).permit(:name, :amount)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_account
+    @account = current_user.accounts.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def account_params
+    params.require(:account).permit(:name, :amount, :user_id)
+  end
 end
